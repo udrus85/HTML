@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Demo — Mini HTML Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main style="max-width:900px;margin:2rem auto;padding:1rem">
+    <h2>Demo страница</h2>
+    <p>Это демонстрационная страница, показывающая простой пример компонента и того, как я структурирую проект.</p>
+
+    <section>
+      <h3>Пример кода</h3>
+      <pre><code>const greet = (name) =&gt; `Привет, ${name}!`;
+console.log(greet('Мир'));</code></pre>
+    </section>
+
+    <section>
+      <h3>Интерактив</h3>
+      <button id="alert-btn">Нажми меня</button>
+      <script>
+        document.getElementById('alert-btn').addEventListener('click', function(){
+          alert('Это демо-бот: кнопка работает');
+        });
+      </script>
+    </section>
+  </main>
+</body>
+</html>
