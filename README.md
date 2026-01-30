@@ -8,9 +8,9 @@
 
 Как запустить: откройте `index.html` в браузере.
 
-Идея для коммитов:
-1. Инициализация проекта и базовая HTML-структура
-2. Добавление стилей
-3. Добавление простого JS и README
+История коммитов (пример):
+1. chore: init html-mini-project with index.html — инициализация проекта
+2. feat: add contact section to index.html — добавлена секция контактов
+3. docs: add README and LICENSE — обновлён README и добавлена лицензия
 
 Автор: Ваше имя
