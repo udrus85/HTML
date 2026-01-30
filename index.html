@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mini HTML Project — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Mini HTML Project</h1>
+    <p>Небольшой статический сайт для портфолио — показывает навыки верстки и организацию проекта.</p>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h2>Привет — это мой mini-проект</h2>
+      <p>В проекте есть структура файлов, стили и небольшой интерактив при помощи простого JavaScript.</p>
+      <button id="toggle-info">Показать/Скрыть дополнительную информацию</button>
+      <div id="extra" class="hidden">
+        <h3>Что демонстрируется</h3>
+        <ul>
+          <li>Чистая HTML/CSS структура</li>
+          <li>Простая JS-логика</li>
+          <li>Чёткая история коммитов для GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h4>Адаптивность</h4>
+        <p>Макет подстраивается под размер экрана.</p>
+      </article>
+      <article>
+        <h4>Доступность</h4>
+        <p>Использованы семантические теги и понятные кнопки.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2026 — Ваше имя</small>
+  </footer>
+
+  <script>
+    // Простая интерактивность: показать/скрыть блок с дополнительной информацией
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.getElementById('toggle-info');
+      const extra = document.getElementById('extra');
+      btn.addEventListener('click', function () {
+        extra.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
