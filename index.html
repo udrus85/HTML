@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Мини HTML-проект для портфолио: семантическая разметка и базовая структура сайта.">
+  <meta name="description" content="Мини HTML-проект для портфолио: семантическая разметка, структура и подготовка к дальнейшему развитию.">
   <title>Mini HTML Project — Portfolio</title>
 </head>
 
@@ -14,7 +14,7 @@
     <h1>Mini HTML Project</h1>
     <p>
       Небольшой статический сайт для портфолио,
-      демонстрирующий аккуратную HTML-разметку и структуру проекта.
+      демонстрирующий качественную HTML-разметку и структуру проекта.
     </p>
 
     <nav class="site-nav">
@@ -22,6 +22,8 @@
         <li><a href="#about">О проекте</a></li>
         <li><a href="#features">Возможности</a></li>
         <li><a href="#tech">Технологии</a></li>
+        <li><a href="#roadmap">Этапы</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </nav>
@@ -34,24 +36,39 @@
     <section class="hero">
       <h2>Привет — это мой mini-проект</h2>
       <p>
-        Проект создан как отправная точка для демонстрации
-        семантической HTML-разметки и правильной структуры страницы.
+        Проект создан как демонстрация семантической HTML-верстки
+        и логической структуры веб-страницы.
       </p>
 
       <figure>
-        <img src="https://via.placeholder.com/800x300" alt="Пример макета сайта">
-        <figcaption>Пример визуального представления страницы</figcaption>
+        <img src="https://via.placeholder.com/900x320" alt="Макет главной страницы сайта">
+        <figcaption>Визуальное представление будущего интерфейса</figcaption>
       </figure>
     </section>
+
+    <!-- Aside -->
+    <aside class="project-note">
+      <h3>Примечание</h3>
+      <p>
+        Данный проект намеренно начинается с чистого HTML,
+        чтобы история коммитов на GitHub отражала этапы разработки.
+      </p>
+    </aside>
 
     <!-- About -->
     <section id="about" class="about">
       <h3>О проекте</h3>
       <p>
-        Этот проект используется как учебный и портфельный пример.
-        Он постепенно развивается через историю коммитов в Git,
-        показывая этапы создания веб-страницы.
+        Этот mini-проект используется как учебный и портфельный пример.
+        Он показывает, как постепенно формируется веб-страница —
+        от структуры до интерактивных элементов.
       </p>
+
+      <blockquote>
+        <p>
+          Хорошая HTML-структура — это фундамент любого качественного интерфейса.
+        </p>
+      </blockquote>
     </section>
 
     <!-- Features -->
@@ -61,25 +78,26 @@
       <article>
         <h4>Семантическая разметка</h4>
         <p>
-          Используются HTML5-теги:
+          Используются корректные HTML5-теги:
           <code>header</code>, <code>nav</code>, <code>main</code>,
-          <code>section</code>, <code>article</code>, <code>footer</code>.
+          <code>section</code>, <code>article</code>, <code>aside</code>,
+          <code>footer</code>.
         </p>
       </article>
 
       <article>
-        <h4>Логичная структура</h4>
+        <h4>Читабельность кода</h4>
         <p>
-          Контент разделён на смысловые блоки,
-          что упрощает поддержку и дальнейшее развитие проекта.
+          Разметка структурирована и легко читается,
+          что упрощает командную работу и code review.
         </p>
       </article>
 
       <article>
-        <h4>Готовность к масштабированию</h4>
+        <h4>Готовность к развитию</h4>
         <p>
-          HTML подготовлен для подключения стилей и JavaScript
-          на следующих этапах разработки.
+          HTML-основа подготовлена для последующего подключения
+          CSS-стилей и JavaScript-логики.
         </p>
       </article>
     </section>
@@ -90,7 +108,8 @@
       <ul>
         <li>HTML5</li>
         <li>Семантическая верстка</li>
-        <li>Подготовка под CSS и JavaScript</li>
+        <li>Подготовка под CSS</li>
+        <li>Подготовка под JavaScript</li>
         <li>Git и GitHub</li>
       </ul>
 
@@ -100,30 +119,22 @@
       </p>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h3>Контакты</h3>
-
-      <address>
-        <p>
-          Email:
-          <a href="mailto:you@example.com">you@example.com</a>
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/username" target="_blank" rel="noopener">
-            github.com/username
-          </a>
-        </p>
-      </address>
+    <!-- Roadmap -->
+    <section id="roadmap" class="roadmap">
+      <h3>Этапы развития проекта</h3>
+      <ol>
+        <li>Создание базовой HTML-структуры</li>
+        <li>Добавление CSS-стилей и адаптивности</li>
+        <li>Подключение JavaScript-интерактива</li>
+        <li>Добавление demo-страницы и документации</li>
+      </ol>
     </section>
 
-  </main>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <h3>Часто задаваемые вопросы</h3>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <small>© 2026 — Ваше имя. Все права защищены.</small>
-  </footer>
-
-</body>
-</html>
+      <details>
+        <summary>Почему проект начинается без CSS?</summary>
+        <p>
+          Это позволяет наглядно показать этапы
