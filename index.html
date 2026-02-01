@@ -2,62 +2,64 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Мини HTML-проект для портфолио: семантическая разметка и базовая структура сайта.">
   <title>Mini HTML Project — Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="site-header">
     <h1>Mini HTML Project</h1>
-    <p>Небольшой статический сайт для портфолио — показывает навыки верстки и организацию проекта.</p>
+    <p>Небольшой статический сайт для портфолио, демонстрирующий навыки верстки и организации проекта.</p>
+
+    <nav class="site-nav">
+      <a href="#features">Возможности</a>
+      <a href="#contact">Контакты</a>
+    </nav>
   </header>
 
+  <!-- Main content -->
   <main class="content">
+
     <section class="hero">
       <h2>Привет — это мой mini-проект</h2>
-      <p>В проекте есть структура файлов, стили и небольшой интерактив при помощи простого JavaScript.</p>
-      <button id="toggle-info">Показать/Скрыть дополнительную информацию</button>
-      <div id="extra" class="hidden">
-        <h3>Что демонстрируется</h3>
-        <ul>
-          <li>Чистая HTML/CSS структура</li>
-          <li>Простая JS-логика</li>
-          <li>Чёткая история коммитов для GitHub</li>
-        </ul>
-      </div>
+      <p>
+        Проект создан как пример аккуратной HTML-структуры с использованием
+        семантических тегов и логического разделения контента.
+      </p>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
+      <h3>Что демонстрируется</h3>
+
       <article>
-        <h4>Адаптивность</h4>
-        <p>Макет подстраивается под размер экрана.</p>
+        <h4>Семантическая разметка</h4>
+        <p>Используются корректные HTML5-теги для повышения читаемости и доступности.</p>
       </article>
+
       <article>
-        <h4>Доступность</h4>
-        <p>Использованы семантические теги и понятные кнопки.</p>
+        <h4>Структура проекта</h4>
+        <p>Файлы организованы логично и подготовлены для дальнейшего расширения.</p>
       </article>
     </section>
 
-    <!-- Добавленная секция контактной информации -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <h3>Контакты</h3>
-      <p>Напишите мне на <a href="mailto:you@example.com">you@example.com</a> — или добавьте ссылку на профиль GitHub/LinkedIn.</p>
+      <p>
+        Связаться со мной можно по email:
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <small>© 2026 — Ваше имя</small>
   </footer>
 
-  <script>
-    // Простая интерактивность: показать/скрыть блок с дополнительной информацией
-    document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.getElementById('toggle-info');
-      const extra = document.getElementById('extra');
-      btn.addEventListener('click', function () {
-        extra.classList.toggle('hidden');
-      });
-    });
-  </script>
 </body>
 </html>
+
